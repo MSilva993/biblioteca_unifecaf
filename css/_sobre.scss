@@ -1,0 +1,61 @@
+#sobre {
+  width: 100%;
+  padding: 40px 80px;
+  background-color: #f5f5f5;
+
+  /* TÍTULO — canto superior esquerdo */
+  h2 {
+    text-align: left;
+    font-family: $fonte-titulo;
+    font-size: 2.6rem;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    color: #002147;
+    font-weight: 700;
+  }
+
+  /* CONTAINER DOS TEXTOS + IMAGEM CENTRAL */
+  .sobre-container {
+    display: grid;
+    grid-template-columns: 1fr 260px 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+
+    p {
+      font-family: $fonte-texto;
+      font-size: 1.25rem;
+      line-height: 1.75;
+      color: #333;
+    }
+
+    /* IMAGEM CENTRAL QUADRADA */
+    .imagem-central img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /* GALERIA DE 4 IMAGENS — TODAS IGUAIS */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    img {
+      width: 100%;
+      height: 220px; // altura fixa
+      min-height: 220px; // impede de ficar menor
+      max-height: 220px; // impede de ficar maior
+      object-fit: cover; // corta o excesso e mantém proporção
+      border-radius: 10px;
+      display: block; // remove comportamento inline
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

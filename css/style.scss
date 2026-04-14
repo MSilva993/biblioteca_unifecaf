@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Importação dos módulos SCSS
+@import "variaveis";
+@import "global";
+@import "header";
+@import "sobre";
+@import "livros";
+@import "unidades";
+@import "contatos"; // <-- ajuste se o arquivo for _contatos.scss
+@import "footer";
+@import "responsivo";

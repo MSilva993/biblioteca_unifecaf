@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* ============================
+    MOBILE — até 768px
+   ============================ */
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    height: auto;
+  }
+  header nav {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+  /* SOBRE */
+  #sobre {
+    padding: 30px 20px;
+  }
+  #sobre .sobre-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #sobre .sobre-container .imagem-central img {
+    margin: 20px auto;
+  }
+  #sobre .galeria {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  /* LIVROS */
+  #livros {
+    padding: 30px 20px;
+  }
+  #livros .livros-container {
+    grid-template-columns: 1fr;
+  }
+  #livros .card-livro {
+    height: auto;
+  }
+  #livros .card-livro img {
+    height: 350px;
+  }
+  /* UNIDADES */
+  #unidades {
+    padding: 30px 20px;
+  }
+  #unidades .unidade {
+    flex-direction: column;
+    text-align: center;
+  }
+  #unidades .unidade img {
+    margin-bottom: 15px;
+  }
+  /* CONTATOS */
+  #contatos {
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #contatos .imagem img {
+    width: 260px;
+    height: 260px;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+/* ============================
+   💻 TABLET — 769px a 1024px
+   ============================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* SOBRE */
+  #sobre .sobre-container {
+    grid-template-columns: 1fr 200px 1fr;
+  }
+  /* LIVROS */
+  #livros .livros-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* UNIDADES */
+  #unidades .unidade {
+    gap: 20px;
+  }
+  /* CONTATOS */
+  #contatos {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=responsivo.css.map */
